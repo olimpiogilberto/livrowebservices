@@ -14,13 +14,13 @@ public class CarroTest extends TestCase {
 		// Valida se encontrou algo
 		assertTrue(carros.size() > 0);
 		// Valida se encontrou o Tucker
-		Carro tucker = carroService.findByName("Tucker 1948").get(0);
+		Carro tucker = carroService.findByName("Tucker 1948").get(1);
 		assertEquals("Tucker 1948", tucker.getNome());
 		// Valida se encontrou a Ferrari
-		Carro ferrari = carroService.findByName("Ferrari FF").get(0);
+		Carro ferrari = carroService.findByName("Ferrari FF").get(1);
 		assertEquals("Ferrari FF", ferrari.getNome());
 		// Valida se encontrou o Bugatti
-		Carro bugatti = carroService.findByName("Bugatti Veyron").get(0);
+		Carro bugatti = carroService.findByName("Bugatti Veyron").get(1);
 		assertEquals("Bugatti Veyron", bugatti.getNome());
 	}
 }
