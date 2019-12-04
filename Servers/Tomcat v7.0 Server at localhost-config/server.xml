@@ -18,7 +18,6 @@
      define subcomponents such as "Valves" at this level.
      Documentation at /docs/config/server.html
  --><Server port="8005" shutdown="SHUTDOWN">
-  <Listener className="org.apache.catalina.startup.VersionLoggerListener"/>
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
   -->
@@ -126,7 +125,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="Loja_Virtual_Java" path="/Loja_Virtual_Java" reloadable="true" source="org.eclipse.jst.jee.server:Loja_Virtual_Java"/><Context docBase="InternetBanking" path="/InternetBanking" reloadable="true" source="org.eclipse.jst.jee.server:InternetBanking"/><Context docBase="Loja Virtual JSF DAO" path="/Loja_Virtual_JSF_DAO" reloadable="true" source="org.eclipse.jst.jee.server:Loja Virtual JSF DAO"/></Host>
+      <Context docBase="Carros" path="/Carros" reloadable="true" source="org.eclipse.jst.jee.server:Carros"/></Host>
     </Engine>
   </Service>
 </Server>

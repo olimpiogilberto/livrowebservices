@@ -1,7 +1,6 @@
 package br.com.livro.servlets;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,13 +14,8 @@ public class HelloServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+		resp.getWriter().print("Olá mundo Servlet");
+		resp.getWriter().print("<br> Funciona com apache tomcat 7.0.54");
 	}
-
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
-		String nome = req.getParameter("nome");
-		String sobrenome = req.getParameter("sobrenome");
-		resp.getWriter().print("Olá mundo POST " + nome + " " + sobrenome);
-	}
+	
 }
