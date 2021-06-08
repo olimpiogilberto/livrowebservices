@@ -3,9 +3,6 @@ package br.com.livro.util;
 import java.io.IOException;
 import java.io.StringWriter;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
 import javax.xml.stream.XMLStreamWriter;
 
 import org.codehaus.jettison.mapped.MappedNamespaceConvention;
@@ -16,9 +13,10 @@ import br.com.livro.domain.ListaCarros;
 import br.com.livro.domain.Response;
 
 
+
 public class JAXBUtil {
 	private static JAXBUtil instance;
-	private static JAXBContext context;
+	private static ObjectContext context;
 
 	public static JAXBUtil getInstance() {
 		return instance;

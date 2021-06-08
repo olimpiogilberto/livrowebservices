@@ -1,8 +1,8 @@
 package br.com.livro.domain;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.ws.WebServiceRef;
 
-@XmlRootElement
+@WebServiceRef
 public class Response {
 	private String status;
 	private String msg;

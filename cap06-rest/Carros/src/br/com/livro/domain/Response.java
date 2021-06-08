@@ -1,8 +1,5 @@
 package br.com.livro.domain;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class Response {
 	private String status;
 	private String msg;
